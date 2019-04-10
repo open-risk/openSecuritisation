@@ -5,11 +5,11 @@ This repository aims to demonstrate a number of technical elements in support of
 * Specifying cashflow operations using lambda functions serialized in a yaml file
 * Documenting the cashflow logic using a python file
 
+![Cashflow Screenshot](cashflows.png)
+
 # Description
 
-The motivation and approach is described more fully here
-
-
+The motivation and approach is [described more fully here](https://www.openriskmanagement.com/open-source-securitisation/)
 
 
 # Dependencies
