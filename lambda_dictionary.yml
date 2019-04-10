@@ -1,0 +1,18 @@
+floating_rate_payment:
+    function: "lambda x1, x2, x3: (x1 + x2) * x3"
+    description: "Calculate floating rate interest payment"
+subtract_amount:
+    function: "lambda x1, x2: max(0.0, x1 - x2)"
+    description: "Subtract and amount and assign to new variable"
+collect_payments:
+    function: "lambda x1, x2: x1 + x2"
+    description: "Add payments from two sources"
+apply_scheduled_payment:
+    function: "lambda x1, x2: min(x1, x2)"
+    description: "Make payment up to the scheduled amount"
+compound_and_add:
+    function: "lambda x1, x2, x3: (1.0 + x1) * x2 + x3"
+    description: "Compound an account with interest and add cashflow"
+required_reduction:
+  function: "lambda x1, x2,: max(min(x1, x2), 0.0)"
+  description: "Calculate required reduction (bounded to be positive)"

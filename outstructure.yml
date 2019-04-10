@@ -1,0 +1,95 @@
+!!python/object:Securitisation.Structure
+Equity: !!python/object:Securitisation.Equity
+  amount: 0.04999999999999999
+  payment: null
+FeeStructure: null
+IC_Tests:
+- !!python/object:Securitisation.IC_Test
+  IC_Ratio: null
+  IC_Status: null
+  IC_Trigger: 1.0
+- !!python/object:Securitisation.IC_Test
+  IC_Ratio: null
+  IC_Status: null
+  IC_Trigger: 1.0
+- !!python/object:Securitisation.IC_Test
+  IC_Ratio: null
+  IC_Status: null
+  IC_Trigger: 1.0
+- !!python/object:Securitisation.IC_Test
+  IC_Ratio: null
+  IC_Status: null
+  IC_Trigger: 1.0
+IC_haircut: 0.0
+Liabilities:
+- !!python/object:Securitisation.Bond
+  Bond_Spread: 0.02
+  IC_Trigger: 0.0
+  Indicator: A1
+  Notional: null
+  OC_Trigger: 0.0
+  Payment: null
+  Rank: null
+  Type: Senior
+  initial_Notional: 0.75
+  scheduled_Payment: 0.0
+  spread: 0.0
+- !!python/object:Securitisation.Bond
+  Bond_Spread: 0.05
+  IC_Trigger: 0.0
+  Indicator: M1
+  Notional: null
+  OC_Trigger: 0.0
+  Payment: null
+  Rank: 1
+  Type: Mezzanine
+  initial_Notional: 0.1
+  scheduled_Payment: 0.0
+  spread: 0.0
+- !!python/object:Securitisation.Bond
+  Bond_Spread: 0.1
+  IC_Trigger: 0.0
+  Indicator: M2
+  Notional: null
+  OC_Trigger: 0.0
+  Payment: null
+  Rank: 2
+  Type: Mezzanine
+  initial_Notional: 0.05
+  scheduled_Payment: 0.0
+  spread: 0.0
+- !!python/object:Securitisation.Bond
+  Bond_Spread: 0.15
+  IC_Trigger: 0.0
+  Indicator: M3
+  Notional: null
+  OC_Trigger: 0.0
+  Payment: null
+  Rank: 3
+  Type: Mezzanine
+  initial_Notional: 0.05
+  scheduled_Payment: 0.0
+  spread: 0.0
+OC_Tests:
+- !!python/object:Securitisation.OC_Test
+  OC_Ratio: null
+  OC_Status: null
+  OC_Trigger: 1.2
+- !!python/object:Securitisation.OC_Test
+  OC_Ratio: null
+  OC_Status: null
+  OC_Trigger: 1.1
+- !!python/object:Securitisation.OC_Test
+  OC_Ratio: null
+  OC_Status: null
+  OC_Trigger: 1.08
+- !!python/object:Securitisation.OC_Test
+  OC_Ratio: null
+  OC_Status: null
+  OC_Trigger: 1.01
+OC_haircut: 1.0
+Tests: 4
+adj_notional: null
+reserve: !!python/object:Securitisation.Reserve
+  amount: 0.0
+senior_fees: 0.0025
