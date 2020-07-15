@@ -12,13 +12,10 @@
 # either express or implied. See the License for the specific language governing permissions and
 # limitations under the License.
 
-""" This module provides the key transition matrix objects
+""" This module provides the key Securitisation structure objects
 
-* CreditCurve_ implements the functionality of a collection of credit (default curves)
-* TransitionMatrix_ implements the functionality of single period transition matrix
-* TransitionMatrixSet_ provides a container for a multiperiod transition matrix collection
-* StateSpace holds information about the stochastic system state space
-* EmpiricalTransitionMatrix implements the functionality of a continuously observed transition matrix
+* Structure_ implements the overall container of structure information
+
 
 """
 
@@ -52,11 +49,11 @@ class Structure:
 
     def calculate_equity(self, initial_notional):
         """
-        Simulate a default rate process
+        Implement the accounting identity that defines equity as the
+        residual interest in asset pool
 
         """
-        # Implement the accounting identity that defines equity as the
-        # residual interest in asset pool
+
         equity = initial_notional
         for Bond in self.Liabilities:
             # print(equity, Bond.initial_Notional)
