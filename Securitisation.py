@@ -21,6 +21,7 @@
 
 import numpy as np
 
+
 class Structure:
     def __init__(self):
         """ The AssetScenario object implements a typical collection of `credit curves <https://www.openriskmanual.org/wiki/Credit_Curve>`_.
