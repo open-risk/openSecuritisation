@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# (c) 2019 Open Risk, all rights reserved
+# (c) 2019 - 2023 Open Risk, all rights reserved
 #
 # openSecuritisation is licensed under the Apache 2.0 license a copy of which is included
 # in the source distribution of TransitionMatrix. This is notwithstanding any licenses of
@@ -21,9 +21,10 @@ Inputs:
 
 """
 
+import pickle
+
 import numpy as np
 from ruamel.yaml import YAML
-import pickle
 
 ###################################################
 # Load Serialized structure from file
