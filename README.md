@@ -4,7 +4,7 @@ This repository aims to demonstrate a number of technical elements in support of
 
 More specifically, we propose the following:
 
-* Specifying a securitisation structure (tranching) using a yaml file
+* Specifying a securitisation structure (_tranching_) using a yaml file
 * Specifying cashflow operations using lambda functions serialized in a yaml file
 * Documenting the cashflow logic using a python file
 
@@ -12,6 +12,7 @@ More specifically, we propose the following:
 
 
 # Dependencies
+
 * ruamel.yaml for parsing and emitting yaml documents that are part of the specification
 * numpy for storage and processing of vectors / matrices holding numerical data
 * pickle for storage of data / objects not part of the specification
